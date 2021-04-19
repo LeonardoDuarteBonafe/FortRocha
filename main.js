@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", function () {
     
     var buttonFortRocha = document.querySelectorAll('.fort-rocha button');
     var buttonIndustria = document.querySelectorAll('.industria button');
-    
+   
     buttonFortRocha.forEach(button => button.addEventListener('click', function(){
         window.location.href = "sobre-fort-rocha.html";
     }));
@@ -14,8 +14,6 @@ window.addEventListener("DOMContentLoaded", function () {
     buttonIndustria.forEach(button => button.addEventListener('click', function(){
         window.location.href = "industria.html";
     }));
-   
-    console.log( location.href + "/test");
     
     //if(window.location.pathname === "/fale-conosco.html"){
     if(location.href.split('/').pop()  === "fale-conosco.html"){

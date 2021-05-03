@@ -1,0 +1,792 @@
+@font-face{
+    src: url(Fonts/Roboto-Regular.ttf);
+    font-family: robotoRegular;
+}
+
+@font-face{
+    src: url(Fonts/Roboto-Bold.ttf);
+    font-family: robotoBold;
+}
+
+body{
+    max-width: 1366px;
+    margin: 0 auto !important;
+    font-family: robotoRegular !important;
+}
+
+.alert{
+    display: none;
+}
+
+h1{
+    color: #4C4C4C;
+    font-family: robotoBold;
+    font-size: 3.3rem !important;
+}
+
+p{
+    color: #4C4C4C;
+}
+
+.language{
+    position: fixed;
+    right: 0;
+    top: 80px;
+    z-index: 20;
+    padding: 10px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.language img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.carousel-indicators{
+    align-content: flex-end !important;
+    align-items: flex-end !important;
+    justify-content: flex-end !important;
+    margin: 0 !important;
+    margin-right: 7% !important;
+    margin-bottom: 5% !important;
+    padding: 0 !important;
+}
+
+.navbar{
+    font-size: 1.25rem !important;
+}
+
+.navbar-brand img{
+    width: 170px;
+    margin-left: 15%;
+}
+
+.navbar .nav-item{
+    margin: 0 7px;
+    font-family: robotoBold !important;
+    color: #4C4C4C !important;
+}
+
+.navbar .navbar-toggler{
+    width: 40px !important;
+    height: 40px !important;
+}
+
+
+.header{
+    margin: 0 !important;
+    padding: 0 !important;
+    left: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+}
+
+.header{
+    margin: 0 !important;
+    align-content: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.header div{
+    padding: 20px 20px;
+}
+
+header img{
+    width: 150px;
+    margin-left: 20%;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: none;
+}
+
+header ul{
+    width: 95%;
+    padding: 0;
+    margin: 0;
+    display: none;
+    display: inline-flex;
+    list-style: none;
+    color: black;
+    justify-content: flex-end;
+}
+
+header ul li{
+    margin: 0px;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    color: #58595B;
+    font-family: robotoBold;
+}
+
+.fixed{
+    position: fixed !important;
+    z-index: 20 !important;
+    width: 100% !important;
+    max-width: 1366px !important;
+    top: 0 !important;
+}
+
+.menu-bar-social-icons img{
+    width: 30px;
+    padding: 2px 2px;
+    margin: 0 5px;
+}
+
+.carousel{
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 1366px !important;
+}
+
+.carousel-indicators li{
+    width: 15px !important;
+    height:  15px !important;
+    border-radius: 50% !important;
+    margin: 0 10px !important;
+}
+
+.carousel-caption{
+    bottom: 17.5% !important;
+}
+
+.carousel-caption h1{
+    font-size: 3.5rem;
+    color: white;
+    font-family: robotoBold;
+}
+
+.carousel-caption p{
+    font-size: 1.7rem;
+    color: white;
+}
+
+.infos{
+    padding: 50px 100px;
+    background-color: #F1F2F2;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+.infos .row{
+    padding: 20px;
+    height: 350px;
+}
+
+.infos h1{
+    font-family: robotoBold;
+    font-size: 3.3em;
+}
+
+.infos p{
+    font-size: 1.2em;
+}
+
+.infos img{
+    width: 80%;;
+}
+
+.infos button{
+    color: #075E8E;
+    margin-top: 10px;
+    padding: 5px 30px;
+    font-family: robotoBold;
+    font-size: 1.5em;
+    border-color: #075E8E;
+    border-style: solid;
+    border-width: thin;
+    background-color: transparent;
+}
+
+.infos .button-after{
+    display: none; !important;
+}
+
+.infos .button-before{
+    display: block !important;
+}
+
+.nossos-produtos{
+    width: 60%;
+    margin: 0 auto;
+    padding: 40px 0 10px 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.nossos-produtos img{
+    width: 100%;
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+.nossos-produtos img:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.nossos-produtos h1{
+    font-size: 3.3rem;
+}
+
+.nossos-produtos p{
+    font-size: 1.2em;
+}
+
+.nossos-produtos .col-9{
+    margin: 0 auto 50px auto;
+}
+
+.nossos-produtos .col-6 p{
+    font-size: 1.35em;
+    margin: 5px;
+}
+
+.blue-square{
+    width: 50px;
+    height: 10px;
+    background-color: #075E8E;
+    margin: 35px auto 15px auto;
+}
+
+.fale-conosco{
+    position: relative;
+}
+
+.fale-conosco img{
+    width: 100%;
+}
+
+.fale-conosco div{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.fale-conosco h1{
+    font-size: 3.3rem;
+    padding: 10px 0 10px 0;
+}
+
+.fale-conosco p{
+    font-size: 1.3rem;
+}
+
+.fale-conosco button{
+    margin-top: 60px;
+    width: 270px;
+    height: 50px;
+    color: white;
+    background-color: #075E8E;
+    font-size: 1.4rem;
+    border-style: none;
+    font-family: robotoBold;
+}
+
+footer{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    background-color: #075E8E;
+    color: white;
+}
+
+footer .container{
+    width: 70%;
+}
+
+footer .row{
+    padding-top: 50px;
+}
+
+footer img{
+    padding-left: 15%;
+    width: 85%;
+}
+
+footer p{
+    font-size: 1.2em;
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+}
+
+footer h5{
+    font-family: robotoBold;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-logos{
+    width: 100%;
+}
+
+footer .social-logos .col-3{
+    padding: 2px 6px 2px 0px;
+    margin: 0 !important;
+    width: 30px !important;
+}
+
+.footer-contato{
+    margin-top: 20px;
+}
+
+.copyright{
+    font-size: 0.8em;
+}
+
+.page-sobre-industria{
+    background-color: #F1F2F2;
+}
+
+.page-sobre-industria .container{
+    padding: 50px 0;
+}
+
+.page-sobre-industria p{
+    font-size: 1.35rem;
+    margin: 0;
+}
+
+.page-sobre-industria img{
+    width: 100%;
+}
+
+.form{
+    padding: 80px 0 100px 0;
+}
+
+.form label{
+    color: #959598;
+}
+
+.form .row .col-6 p{
+    padding-top: 70px;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+.form-control{
+    background-color: #F6F6F5 !important;
+}
+
+
+.form-row input::-webkit-input-placeholder {
+    color: red;
+    opacity: 0.6;
+ }
+
+form .btn{
+    color: #959598;
+    background-color: #F6F6F5;
+    border-style: solid !important;
+    border-color: lightgray !important;
+    width: 130px;
+}
+
+.galeria{
+    width: 200px;
+    height: 200px;
+    background-color: palegoldenrod;
+}
+
+@media only screen and (max-width: 1000px){
+    *{
+        font-size: 0.8rem !important;
+    }
+
+    h1{
+        font-size: 1.3rem !important;
+    }
+
+    .navbar{
+        font-size: 1rem !important;
+    }
+
+    .navbar-brand{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .navbar-brand img{
+        width: 150px;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .navbar .nav-item{
+        font-size: 1.2rem !important;
+    }
+
+    .menu-bar-social-icons{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .carousel-indicators li{
+        width: 8px !important;
+        height: 8px !important;
+        margin: 0 5px !important;
+    }
+
+    .carousel-caption{
+        padding: 0 !important;
+        bottom: 9% !important;
+    }
+
+    .infos{
+        padding: 20px 10px;
+    }
+
+    .infos div div{
+        padding: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .infos .button-after{
+        display: block; !important;
+        padding-bottom: 0px !important;
+    }
+
+    .infos .button-before{
+        display: none !important;
+    }
+
+    .infos img{
+        width: 100%;
+    }
+
+    .blue-square{
+        width: 30px;
+        height: 5px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .nossos-produtos .top-info{
+        margin-bottom: 15px !important;
+    }
+
+    .fale-conosco{
+        height: 150px;
+    }
+
+    .fale-conosco img{
+        height: 100%;
+    }
+
+    .fale-conosco button{
+        margin-top: 0;
+        width: 100px;
+        height: 30px;
+    }
+
+    footer{
+        padding-top: 0;
+    }
+
+    footer .col-12{
+        margin-bottom: 20px;
+    }
+
+    footer .copyright{
+        padding: 0;
+    }
+    
+    .page-sobre-industria .container{
+        width: 84%;
+        margin-bottom: 0 !important;
+        padding: 10px !important; 
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 575px)
+{
+    h1{
+        font-size: 1.8rem !important;
+    }
+
+    p{
+        font-size: 1rem !important;
+    }
+
+    .carousel-caption{
+        bottom: 15% !important;
+    }
+    
+    .infos{
+        padding: 20px 80px 20px 80px;
+    }
+
+    .infos .row{
+        margin-top: 0px;
+    }
+
+    .infos img{
+        height: 180px;
+    }
+
+    .infos .button-after button{
+        font-size: 1.1rem !important;
+    }
+
+    .blue-square{
+        width: 40px;
+        height: 7px;
+    }
+
+    footer h5{
+        font-size: 1.2rem !important;
+    }
+
+    footer p a{
+        font-size: 1rem !important;
+    }
+
+    .fale-conosco{
+        height: 200px;
+    }
+
+    .fale-conosco button{
+        margin-top: 20px;
+    }
+
+    footer .logo{
+        width: 50% !important;
+    }
+
+    footer .footer-contato{
+        font-size: 1rem !important;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 800px)
+{
+    h1{
+        font-size: 1.7rem !important;
+    }
+
+    p{
+        font-size: 1.2rem !important;
+    }
+    
+    .carousel-caption{
+        bottom: 17% !important;
+    }
+
+    .carousel-indicators li{
+        width: 11px !important;
+        height: 11px !important;
+        margin: 0 5px !important;
+    }
+
+    .infos{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .infos .row{
+        height: 200px !important;
+        margin: 0px 30px 10px 50px;
+    }
+
+    .infos .row .texts{
+        padding: 0 10px 0 0!important;
+    }
+
+    .infos .row .texts p{
+        font-size: 0.9rem !important;
+    }
+
+    .infos .button-before{
+        display: block !important;
+    }
+
+    .infos .button-after{
+        display: none;
+    }
+
+    .infos img{
+        width: 90%;
+        height: 90%;
+    }
+
+    .fale-conosco{
+        height: 200px;
+    }
+
+    .fale-conosco button{
+        margin-top: 20px;
+        width: 130px;
+        font-size: 1.1rem !important;
+        padding: 0 !important;
+    }
+
+    footer h5{
+        font-size: 1.3rem !important;
+    }
+
+    footer p a{
+        font-size: 1.05rem !important;
+    }
+
+    footer .footer-contato p{
+        font-size: 1.05rem !important;
+    }
+
+    footer .logo img{
+        width: 100% !important;
+        padding-left: 0 !important;
+    }
+
+    footer .social-logos .col-3{
+        width: 20px !important;
+    }
+    
+    footer .copyright div{
+        font-size: 1.0rem !important;
+    }
+
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1000px)
+{
+    h1{
+        font-size: 2.3rem !important;
+    }
+
+    p{
+        font-size: 1.4rem !important;
+    }
+
+    .carousel-caption{
+        bottom: 20% !important;
+    }
+
+    .carousel-indicators li{
+        width: 12px !important;
+        height: 13px !important;
+        margin: 0 5px !important;
+    }
+    
+    .infos{
+        padding: 20px 40px;
+    }
+    
+    .infos .row{
+        height: 250px;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .infos .texts p{
+        padding-right: 20px;
+        font-size: 1.3rem !important;
+    }
+    
+    .infos img{
+        margin: auto 0;
+        height: 200px;
+        width: 90%;
+    }
+    
+    .infos .button-before{
+        display: block !important;
+        font-size: 1.4rem !important;
+    }
+    
+    .infos .button-after{
+        display: none !important;
+    }
+    
+    .blue-square{
+        width: 40px;
+        height: 8px;
+    }
+    
+    .fale-conosco{
+        height: 250px;
+    }
+    
+    .fale-conosco button{
+        margin-top: 40px;
+        width: 160px;
+        height: 35px;
+        font-size: 1.3rem !important;
+    }
+    
+    footer .logo img{
+        padding-left: 0;
+        width: 100%;
+    }
+    
+    footer h5{
+        font-size: 1.5rem !important;
+    }
+    
+    footer p a{
+        font-size: 1.3rem !important;
+    }
+    
+    footer .footer-contato p{
+        font-size: 1.3rem !important;
+    }
+    
+    footer .copyright div{
+        font-size: 1.1rem !important;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px)
+{
+    .navbar-brand img{
+        width: 170px;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .carousel-caption{
+        bottom: 14.5% !important;
+    }
+    
+    .infos h1{
+        font-size: 2.7rem !important;
+    }
+    
+    .infos .row{
+        padding: 15px 0;
+    }
+    
+    .infos .row img{
+        height: 80%;
+        margin: auto 0;
+    }
+    
+    .fale-conosco img{
+        height: 350px;
+    }
+}
+
+@media only screen and (min-width: 351px) and (max-width: 400px){
+
+}

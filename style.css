@@ -28,22 +28,6 @@ p{
     color: #4C4C4C;
 }
 
-.language{
-    position: fixed;
-    right: 0;
-    top: 80px;
-    z-index: 20;
-    padding: 10px 0 5px 0;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-}
-
-.language img{
-    width: 30px;
-    cursor: pointer;
-}
-
 .carousel-indicators{
     align-content: flex-end !important;
     align-items: flex-end !important;

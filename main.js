@@ -8,13 +8,13 @@ window.addEventListener("DOMContentLoaded", function () {
     
     var language = {
         eng: {
-            /*navbar: {
-                about_us: "About us",
+            navbar: {
+                about_us: "About Us",
                 industry: "Industry",
                 products: "Products",
                 contact_us: "Contact Us",
-            },*/
-                carousel: {
+            },
+            carousel: {
                     super_white: "Perfect for your space",
                     white_alvorada: "Beauty and durability",
                     crystal: "For brighter spaces",
@@ -63,11 +63,16 @@ window.addEventListener("DOMContentLoaded", function () {
                 form_message: "Your message",
                 button: "Send",
             },
-            /*footer: {
-                company: "company",
+            contact_us_banner: {
+                title: "Contact Us",
+                text: "Get in touch through our phone number or e-mail address.",
+                button: "Contact Us",
+            },
+            footer: {
+                company: "Company",
                 address: "Main Avenue, Gironda - Rural Area, City of Cachoeiro de Itapemirim, State of Espírito Santo, Brazil",
                 zip_code: "Zip Code 29326-000",
-            }*/
+            }
         },
         pt: {
             welcome: "bem vindo"
@@ -78,11 +83,16 @@ window.addEventListener("DOMContentLoaded", function () {
     if(pageLanguage == "pt"){
     }
     if(pageLanguage == "eng"){
-        //carousel
-        $('.carousel-inner').children("div").eq(0).children("div").children("p").text(language.eng.carousel.super_white);
-        $('.carousel-inner').children("div").eq(1).children("div").children("p").text(language.eng.carousel.white_alvorada);
-        $('.carousel-inner').children("div").eq(2).children("div").children("p").text(language.eng.carousel.crystal);
+        //navbar
+        $('.navbar-nav').children("a").eq(0).text(language.eng.navbar.about_us);
+        $('.navbar-nav').children("a").eq(1).text(language.eng.navbar.industry);
+        $('.navbar-nav').children("a").eq(2).text(language.eng.navbar.products);
+        $('.navbar-nav').children("a").eq(3).text(language.eng.navbar.contact_us);
         
+        //carousel
+        $('.carousel-inner').children("div").eq(0).children("img").attr("src", "Imagens/banner-top-super-white-en.png");
+        $('.carousel-inner').children("div").eq(1).children("img").attr("src", "Imagens/banner-top-white-alvorada-en.png");
+        $('.carousel-inner').children("div").eq(2).children("img").attr("src", "Imagens/banner-top-crystal-en.png");
         
         //index infos
         $('.infos .fort-rocha').children("div").children("h1").text(language.eng.infos.fort_rocha.title);
@@ -136,8 +146,24 @@ window.addEventListener("DOMContentLoaded", function () {
         $('form').children("div").children("div").children("label").eq(2).text(language.eng.contact_us.form_subject);
         $('.form-group').children("label").text(language.eng.contact_us.form_message);
         $('form').children("button").text(language.eng.contact_us.button);
+		
+		//fale conosco banner
+		$('.fale-conosco').children("div").children("h1").text(language.eng.contact_us_banner.title);
+		$('.fale-conosco').children("div").children("p").text(language.eng.contact_us_banner.text);
+		$('.fale-conosco').children("div").children("button").text(language.eng.contact_us_banner.button);
+        
+        //footer
+        $('footer').children("div").children("div").children("div").eq(1).children("p").eq(0).children("a").text(language.eng.navbar.about_us);
+        $('footer').children("div").children("div").children("div").eq(1).children("p").eq(1).children("a").text(language.eng.navbar.industry);
+        $('footer').children("div").children("div").children("div").eq(1).children("p").eq(2).children("a").text(language.eng.navbar.products);
+        $('footer').children("div").children("div").children("div").eq(1).children("p").eq(3).children("a").text(language.eng.navbar.contact_us);
+        $('footer').children("div").children("div").children("div").eq(2).children("h5").text(language.eng.footer.company);
+         $('footer').children("div").children("div").children("div").eq(2).children("p").eq(0).children("a").text(language.eng.footer.address);
+         $('footer').children("div").children("div").children("div").eq(2).children("p").eq(1).children("a").text(language.eng.footer.zip_code);
+
 
     }
+	
 
     $('.btn-language').click(function(){
         localStorage.setItem("language", $(this).attr('id'));
@@ -172,21 +198,25 @@ window.addEventListener("DOMContentLoaded", function () {
     var buttonIndustria = document.querySelectorAll('.industria button');
 
     buttonFortRocha.forEach(button => button.addEventListener('click', function(){
-        window.location.href = "sobre-fort-rocha.html";
+        window.location.href = "sobre-fort-rocha.php";
     }));
 
     buttonIndustria.forEach(button => button.addEventListener('click', function(){
-        window.location.href = "industria.html";
+        window.location.href = "industria.php";
     }));
 
     //if(window.location.pathname === "/fale-conosco.html"){
-    if(location.href.split('/').pop()  === "fale-conosco.html"){
+    if(location.href.split('/').pop()  === "fale-conosco.php"){
         console.log("entrou na pagina");
         const buttonSendForm = document.querySelector('.submitForm');
 
         buttonSendForm.addEventListener('click', getFormInfos);
+        
+        
     }
-
+    $('.fale-conosco button').click(function(){
+            window.location.href = "fale-conosco.php";
+        })
 
     $(window).scroll(function(){
         if($(this).scrollTop() > menuBarHeight) {

@@ -117,6 +117,7 @@ header ul li{
     width: 100% !important;
     max-width: 1366px !important;
     top: 0 !important;
+    height: 85px;
 }
 
 .menu-bar-social-icons img{
@@ -134,6 +135,7 @@ header ul li{
     padding: 0 !important;
     width: 100% !important;
     max-width: 1366px !important;
+    margin-top: 85px !important;
 }
 
 .carousel-indicators li{
@@ -144,9 +146,7 @@ header ul li{
 }
 
 .carousel-caption{
-    text-align: left !important;
-    left: 10% !important;
-    bottom: 8% !important;
+    bottom: 17.5% !important;
 }
 
 .carousel-caption h1{
@@ -181,8 +181,16 @@ header ul li{
     font-size: 1.2em;
 }
 
-.infos img{
-    width: 80%;;
+.infos a{
+    width: 80%;
+    overflow: hidden;
+}
+
+.infos a img{
+    object-fit: cover !important;
+    object-position: center !important;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .infos button{
@@ -205,6 +213,10 @@ header ul li{
     display: block !important;
 }
 
+.page-produtos .nossos-produtos{
+    margin-top: 85px;
+}
+
 .nossos-produtos{
     width: 60%;
     margin: 0 auto;
@@ -220,7 +232,7 @@ header ul li{
 }
 
 .nossos-produtos img:hover{
-    transform: scale(1.05);
+    transform: scale(1.0);
     transition: 1s;
 }
 
@@ -246,6 +258,63 @@ header ul li{
     height: 10px;
     background-color: #075E8E;
     margin: 35px auto 15px auto;
+}
+
+.pedreira{
+    width: 100%;
+    padding: 25px 0;
+    margin: 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    height: 420px;
+    flex-wrap: wrap;
+    background-color: #F1F2F2;
+}
+
+.pedreira h1{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pedreira .box{
+    width: 30%;
+    margin: 0 50px;
+    height: 100%;
+}
+
+.pedreira .box img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 250px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.pedreira .box p{
+    height: 50px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem !important;
+}
+
+.pedreira .box img:hover{
+    transform: scale(1.05);
+}
+
+.maps{
+    height: 350px;
+    margin-bottom: 30px;
+}
+
+.maps iframe{
+    width: 100%;
+    height: 100%;
 }
 
 .fale-conosco{
@@ -347,10 +416,12 @@ footer .social-logos .col-3{
 
 .page-sobre-industria .container{
     padding: 50px 0;
+    margin-top: 85px;
 }
 
 .page-sobre-industria p{
     font-size: 1.35rem;
+    margin: 0;
 }
 
 .page-sobre-industria img{
@@ -358,6 +429,7 @@ footer .social-logos .col-3{
 }
 
 .form{
+    margin-top: 85px;
     padding: 80px 0 100px 0;
 }
 
@@ -379,7 +451,7 @@ footer .social-logos .col-3{
 .form-row input::-webkit-input-placeholder {
     color: red;
     opacity: 0.6;
- }
+}
 
 form .btn{
     color: #959598;
@@ -392,7 +464,6 @@ form .btn{
 .galeria{
     width: 200px;
     height: 200px;
-    background-color: palegoldenrod;
 }
 
 @media only screen and (max-width: 1000px){
@@ -408,6 +479,26 @@ form .btn{
         font-size: 1rem !important;
     }
 
+    .fixed{
+        height: auto;
+    }
+
+    .carousel{
+        margin-top: 60px !important;
+    }
+
+    .page-sobre-industria .container{
+        margin-top: 60px;
+    }
+
+    .page-produtos .nossos-produtos{
+        margin-top: 70px;
+    }
+
+    .form{
+        margin-top: 70px;
+    }
+
     .navbar-brand{
         margin: 0 !important;
         padding: 0 !important;
@@ -418,7 +509,7 @@ form .btn{
         margin: 0 !important;
         padding: 0 !important;
     }
-    
+
     .navbar .nav-item{
         font-size: 1.2rem !important;
     }
@@ -436,9 +527,7 @@ form .btn{
 
     .carousel-caption{
         padding: 0 !important;
-        text-align: left !important;
-        left: 10% !important;
-        bottom: 5% !important;
+        bottom: 9% !important;
     }
 
     .infos{
@@ -459,8 +548,12 @@ form .btn{
         display: none !important;
     }
 
-    .infos img{
-        width: 100%;
+    .infos a{
+        width: 100% !Important;
+    }
+
+    .infos a{
+        width: 100% !important;
     }
 
     .blue-square{
@@ -499,11 +592,37 @@ form .btn{
     footer .copyright{
         padding: 0;
     }
-    
+
     .page-sobre-industria .container{
         width: 84%;
         margin-bottom: 0 !important;
         padding: 10px !important; 
+    }
+}
+
+@media only screen and (max-width: 575px){
+    
+    .pedreira{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    
+    .pedreira h1{
+        margin-bottom: 0;
+        height: 30px;
+    }
+
+    .pedreira .box{
+        width: 54%;
+        height: 200px;
+    }
+
+    .pedreira .box img{
+        height: 150px;
+    }
+    
+    .pedreira .box p{
+        font-size: 1.3rem !important;
     }
 }
 
@@ -517,6 +636,10 @@ form .btn{
         font-size: 1rem !important;
     }
 
+    .carousel-caption{
+        bottom: 15% !important;
+    }
+
     .infos{
         padding: 20px 80px 20px 80px;
     }
@@ -525,8 +648,8 @@ form .btn{
         margin-top: 0px;
     }
 
-    .infos img{
-        height: 180px;
+    .infos a{
+        height: 180px !important;
     }
 
     .infos .button-after button{
@@ -573,6 +696,10 @@ form .btn{
         font-size: 1.2rem !important;
     }
 
+    .carousel-caption{
+        bottom: 17% !important;
+    }
+
     .carousel-indicators li{
         width: 11px !important;
         height: 11px !important;
@@ -605,9 +732,21 @@ form .btn{
         display: none;
     }
 
-    .infos img{
-        width: 90%;
-        height: 90%;
+    .infos a{
+        width: 90% !important;
+        height: 90% !important;
+    }
+
+    .pedreira{
+        height: 300px;
+    }
+    
+    .pedreira h1{
+        margin: 0;
+    }
+
+    .pedreira .box img{
+        height: 150px;
     }
 
     .fale-conosco{
@@ -641,7 +780,7 @@ form .btn{
     footer .social-logos .col-3{
         width: 20px !important;
     }
-    
+
     footer .copyright div{
         font-size: 1.0rem !important;
     }
@@ -659,8 +798,7 @@ form .btn{
     }
 
     .carousel-caption{
-        left: 10% !important;
-        bottom: 8% !important;
+        bottom: 20% !important;
     }
 
     .carousel-indicators li{
@@ -668,72 +806,86 @@ form .btn{
         height: 13px !important;
         margin: 0 5px !important;
     }
-    
+
     .infos{
         padding: 20px 40px;
     }
-    
+
     .infos .row{
         height: 250px;
         margin: 0 !important;
         padding: 0 !important;
     }
-    
+
     .infos .texts p{
         padding-right: 20px;
         font-size: 1.3rem !important;
     }
-    
-    .infos img{
+
+    .infos a{
         margin: auto 0;
         height: 200px;
         width: 90%;
     }
-    
+
     .infos .button-before{
         display: block !important;
         font-size: 1.4rem !important;
     }
-    
+
     .infos .button-after{
         display: none !important;
     }
-    
+
     .blue-square{
         width: 40px;
         height: 8px;
     }
-    
+
+    .pedreira{
+        height: 370px;
+    }
+
+    .pedreira .box img{
+        height: 200px;
+    }
+
     .fale-conosco{
         height: 250px;
     }
-    
+
     .fale-conosco button{
         margin-top: 40px;
         width: 160px;
         height: 35px;
         font-size: 1.3rem !important;
     }
-    
+
     footer .logo img{
         padding-left: 0;
         width: 100%;
     }
-    
+
     footer h5{
         font-size: 1.5rem !important;
     }
-    
+
     footer p a{
         font-size: 1.3rem !important;
     }
-    
+
     footer .footer-contato p{
         font-size: 1.3rem !important;
     }
-    
+
     footer .copyright div{
         font-size: 1.1rem !important;
+    }
+}
+@media only screen and (min-width: 950px) and (max-width: 1040px)
+{
+    .navbar .nav-item{
+        font-size: 1.0rem !important;
     }
 }
 
@@ -744,25 +896,25 @@ form .btn{
         margin: 0 !important;
         padding: 0 !important;
     }
-    
+
+    .carousel-caption{
+        bottom: 14.5% !important;
+    }
+
     .infos h1{
         font-size: 2.7rem !important;
     }
-    
+
     .infos .row{
         padding: 15px 0;
     }
-    
+
     .infos .row img{
         height: 80%;
         margin: auto 0;
     }
-    
+
     .fale-conosco img{
         height: 350px;
     }
-}
-
-@media only screen and (min-width: 351px) and (max-width: 400px){
-
 }
